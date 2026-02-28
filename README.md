@@ -105,7 +105,8 @@ jupyter lab
 
 ## Authors
 
-Rushikesh Ubale; Yasar Mulani: Vashti Chowla and Aya R
+Rushikesh Ubale; Yasar Mulani: Vashti Chowla and Aya Rhazi
+
 
 ------------------------------------------------------------------------
 
