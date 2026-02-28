@@ -1,0 +1,14 @@
+name: hackathon
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - jupyterlab
+  - matplotlib
+  - numpy
+  - pandas
+  - scikit-learn
+  - scipy
+  - seaborn
+prefix: C:\Users\rein7\anaconda3\envs\hackathon
