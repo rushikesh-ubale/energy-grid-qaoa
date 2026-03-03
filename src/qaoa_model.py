@@ -180,7 +180,7 @@ def _sample(qc, shots: int = 2048, seed: int = 42) -> dict:
 def _best_cut_from_counts(counts: dict, nodes: list, G: nx.Graph) -> tuple:
     """Return (best_cut_value, best_partition) from shot counts."""
     best_cut, best_part = -np.inf, {}
-    for bitstring in counts:
+    for bitstring, _ in counts.items():
         bits  = bitstring[::-1]           # Qiskit: rightmost bit = qubit 0
         spins = {nodes[i]: (1 if bits[i] == '0' else -1)
                  for i in range(len(nodes))}
