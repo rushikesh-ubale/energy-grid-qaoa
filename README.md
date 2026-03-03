@@ -30,36 +30,50 @@ The central idea is that scalability at this scale comes from the workflow, not 
 
 ---
 
-## 2. Repository Structure
-.
+repo-name/
+│
 ├── data/
-│ ├── problemA.parquet
-│ └── problemB.parquet
+│   ├── raw/
+│   │   ├── problemA.parquet
+│   │   └── problemB.parquet
+│   └── processed/
 │
 ├── notebooks/
-│ ├── 01_resource_estimation.ipynb
-│ ├── 02_partitioning.ipynb
-│ ├── 03_cluster_qaoa.ipynb
-│ ├── 04_hardware_validation.ipynb
-│ └── 05_analysis_and_plots.ipynb
+│   ├── 01_resource_estimation.ipynb
+│   ├── 02_partitioning.ipynb
+│   ├── 03_cluster_qaoa.ipynb
+│   ├── 04_hardware_validation.ipynb
+│   └── 05_analysis_and_plots.ipynb
 │
 ├── results/
-│ ├── problemB_partition/
-│ ├── problemB_qaoa_layer2/
-│ ├── track_1_hackathon/
-│   ├── hardware_logs/
-│   ├── simulator_logs/
-│   ├── tables/
-│   └── plots/
-│ 
+│   ├── problemB/
+│   │   ├── partition/
+│   │   ├── qaoa_layer2/
+│   │   └── hardware_validation/
+│   │
+│   └── track_1_hackathon/
+│       ├── hardware_logs/
+│       ├── simulator_logs/
+│       ├── tables/
+│       └── plots/
 │
 ├── src/
-│ ├── qubo_builder.py
-│ ├── qaoa_model.py
-│ ├── graph_utils.py
-│ ├── rigetti_runner.py
-│ └── partitioning.py
+│   └── quantum_optimizer/
+│       ├── __init__.py
+│       ├── qubo_builder.py
+│       ├── qaoa_model.py
+│       ├── graph_utils.py
+│       ├── rigetti_runner.py
+│       └── partitioning.py
 │
+├── tests/
+│   ├── test_qubo.py
+│   ├── test_partitioning.py
+│   └── test_qaoa.py
+│
+├── requirements.txt
+├── setup.py  (optional but recommended)
+├── .gitignore
 └── README.md
 
 
