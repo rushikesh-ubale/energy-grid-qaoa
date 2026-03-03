@@ -30,6 +30,9 @@ The central idea is that scalability at this scale comes from the workflow, not 
 
 ---
 
+## 2. Repository Structure
+
+```text
 repo-name/
 │
 ├── data/
@@ -72,9 +75,10 @@ repo-name/
 │   └── test_qaoa.py
 │
 ├── requirements.txt
-├── setup.py  (optional but recommended)
+├── setup.py
 ├── .gitignore
 └── README.md
+```
 
 
 ---
